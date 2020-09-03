@@ -3,6 +3,10 @@
 namespace panix\ext\codemirror;
 
 use panix\engine\Html;
+use panix\ext\codemirror\bundles\CodeMirrorAsset;
+use panix\ext\codemirror\bundles\CodeMirrorMultiplexAsset;
+use panix\ext\codemirror\bundles\CodeMirrorTwigAsset;
+use panix\ext\codemirror\bundles\CodeMirrorXmlAsset;
 use Yii;
 use yii\helpers\Json;
 use yii\web\HttpException;
