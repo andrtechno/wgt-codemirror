@@ -18,7 +18,7 @@
     }
   ],
   "require": {
-    "bower-asset/codemirror": "^5.53"
+    "bower-asset/codemirror": "^5.57"
   },
   "autoload": {
     "psr-4": {
