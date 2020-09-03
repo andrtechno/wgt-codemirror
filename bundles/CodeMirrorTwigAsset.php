@@ -14,7 +14,7 @@ class CodeMirrorTwigAsset extends AssetBundle
         'position' => View::POS_END
     ];
 
-    public $sourcePath = __DIR__.'/twig';
+    public $sourcePath = __DIR__.'/../assets/twig';
     public $js = [
         'twig.js',
 
