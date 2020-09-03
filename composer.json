@@ -1,13 +1,13 @@
 {
   "name": "panix/wgt-codemirror",
-  "description": "Widget colorpicker",
+  "description": "Widget codemirror",
   "keywords": [
     "pixelion-cms",
     "extension",
     "widget",
     "colorpicker"
   ],
-  "homepage": "https://github.com/andrtechno/wgt-colorpicker",
+  "homepage": "https://github.com/andrtechno/wgt-codemirror",
   "type": "yii2-extension",
   "license": "MIT",
   "authors": [
