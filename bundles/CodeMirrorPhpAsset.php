@@ -2,6 +2,8 @@
 
 namespace panix\ext\codemirror\bundles;
 
+use panix\ext\codemirror\CodeMirrorBundle;
+
 /**
  * Class CodeMirrorPhpAsset
  * @package panix\engine\assets

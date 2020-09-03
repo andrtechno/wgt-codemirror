@@ -2,6 +2,8 @@
 
 namespace panix\ext\codemirror\bundles;
 
+use panix\ext\codemirror\CodeMirrorBundle;
+
 /**
  * Class CodeMirrorAsset
  * @package panix\engine\assets
