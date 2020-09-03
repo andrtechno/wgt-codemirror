@@ -30,21 +30,7 @@ to the require section of your `composer.json` file.
 
 
 
-Usage
------
-
-Once the extension is installed, simply use it in your code by :
-
-```php
-<?php
-    echo $form->field($model, 'code')->widget(CodeMirrorTextArea::class, [
-        // options
-    ]);
- ?>
-```
-
-
-# Configuration
+### Configuration
 
 | Опция  | Тип | Описание |
 | --- | :---: | --- |
