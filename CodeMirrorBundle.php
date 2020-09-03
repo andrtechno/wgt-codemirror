@@ -1,6 +1,6 @@
 <?php
 
-namespace panix\engine\assets\codemirror;
+namespace panix\ext\codemirror;
 
 use yii\web\AssetBundle;
 use yii\web\View;

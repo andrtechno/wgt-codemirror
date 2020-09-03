@@ -1,6 +1,6 @@
 <?php
 
-namespace panix\engine\assets\codemirror;
+namespace panix\ext\codemirror\bundles;
 
 /**
  * Class CodeMirrorAsset

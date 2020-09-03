@@ -1,6 +1,6 @@
 <?php
 
-namespace panix\engine\assets\codemirror;
+namespace panix\ext\codemirror\bundles;
 
 /**
  * Class CodeMirrorPhpAsset
@@ -20,7 +20,7 @@ class CodeMirrorPhpAsset extends CodeMirrorBundle
     ];
 
     public $depends = [
-        'panix\engine\assets\codemirror\CodeMirrorAsset',
-        'panix\engine\assets\codemirror\CodeMirrorSearchAsset',
+        'panix\ext\codemirror\bundles\CodeMirrorAsset',
+        'panix\ext\codemirror\bundles\CodeMirrorSearchAsset',
     ];
 }

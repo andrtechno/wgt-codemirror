@@ -1,6 +1,6 @@
 <?php
 
-namespace panix\engine\assets\codemirror;
+namespace panix\ext\codemirror\bundles;
 use yii\web\AssetBundle;
 use yii\web\View;
 
@@ -21,6 +21,6 @@ class CodeMirrorTwigAsset extends AssetBundle
     ];
 
     public $depends = [
-        'panix\engine\assets\codemirror\CodeMirrorAsset',
+        'panix\ext\codemirror\bundles\CodeMirrorAsset',
     ];
 }

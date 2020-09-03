@@ -1,6 +1,6 @@
 <?php
 
-namespace panix\engine\assets\codemirror;
+namespace panix\ext\codemirror\bundles;
 
 /**
  * Class CodeMirrorXmlAsset
@@ -14,6 +14,6 @@ class CodeMirrorMultiplexAsset extends CodeMirrorBundle
     ];
 
     public $depends = [
-        'panix\engine\assets\codemirror\CodeMirrorAsset',
+        'panix\ext\codemirror\bundles\CodeMirrorAsset',
     ];
 }
