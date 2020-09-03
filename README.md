@@ -1,8 +1,13 @@
-wgt-colorpicker
+Widget CodeMirror
 ===========
-Widget for Yii Framework 2.0 to use [colorpicker](http://www.eyecon.ro/colorpicker/)
+Widget for Yii Framework 2.0 to use [CodeMirror](https://codemirror.net/)
 
-[![Latest Stable Version](https://poser.pugx.org/panix/wgt-colorpicker/v/stable)](https://packagist.org/packages/panix/wgt-colorpicker) [![Total Downloads](https://poser.pugx.org/panix/wgt-colorpicker/downloads)](https://packagist.org/packages/panix/wgt-colorpicker) [![Monthly Downloads](https://poser.pugx.org/panix/wgt-colorpicker/d/monthly)](https://packagist.org/packages/panix/wgt-colorpicker) [![Daily Downloads](https://poser.pugx.org/panix/wgt-colorpicker/d/daily)](https://packagist.org/packages/panix/wgt-colorpicker) [![Latest Unstable Version](https://poser.pugx.org/panix/wgt-colorpicker/v/unstable)](https://packagist.org/packages/panix/wgt-colorpicker) [![License](https://poser.pugx.org/panix/wgt-colorpicker/license)](https://packagist.org/packages/panix/wgt-colorpicker)
+[![Latest Stable Version](https://poser.pugx.org/panix/wgt-codemirror/v/stable)](https://packagist.org/packages/panix/wgt-codemirror)
+[![Total Downloads](https://poser.pugx.org/panix/wgt-codemirror/downloads)](https://packagist.org/packages/panix/wgt-codemirror)
+[![Monthly Downloads](https://poser.pugx.org/panix/wgt-codemirror/d/monthly)](https://packagist.org/packages/panix/wgt-codemirror)
+[![Daily Downloads](https://poser.pugx.org/panix/wgt-codemirror/d/daily)](https://packagist.org/packages/panix/wgt-codemirror)
+[![Latest Unstable Version](https://poser.pugx.org/panix/wgt-codemirror/v/unstable)](https://packagist.org/packages/panix/wgt-codemirror)
+[![License](https://poser.pugx.org/panix/wgt-codemirror/license)](https://packagist.org/packages/panix/wgt-codemirror)
 
 Installation
 ------------
@@ -12,13 +17,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer require --prefer-dist panix/wgt-colorpicker "*"
+php composer require --prefer-dist panix/wgt-codemirror "*"
 ```
 
 or add
 
 ```
-"panix/wgt-colorpicker": "*"
+"panix/wgt-codemirror": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -32,9 +37,9 @@ Once the extension is installed, simply use it in your code by :
 
 ```php
 <?php
-    echo $form->field($model, 'color')->widget(ColorPicker::className(), [
-
-    ])->textInput(['maxlength' => 7]);
+    echo $form->field($model, 'code')->widget(CodeMirrorTextArea::class, [
+        // options
+    ]);
  ?>
 ```
 
@@ -43,27 +48,15 @@ Once the extension is installed, simply use it in your code by :
 
 | Опция  | Тип | Описание |
 | --- | :---: | --- |
-| `mode` | string | ColorPicker mode: **textInput** - presents a textfield with a color picker attached (default). **flat** - presents a color picker in flat mode. **selector** - attached to a square selector |
-| `value` | string | The default color. String for hex color. Default is **#000000** |
-| `livePreview` | boolean | Whatever if the color values are filled in the fields while changing values on selector or a field. If false it may improve speed. Default is **true** |
-| `fade` | boolean | Whetever the color picker will be animated Default is **false** |
-| `slide` | boolean | Whetever the color picker will slide Default is **false** |
-| `curtain` | boolean | Whetever the color picker will appear as a curtain Default is **false** |
-| `timeFade` | int | Times for the effect delays Default is **500** |
-| `timeSlide` | int | Times for the effect delays Default is **500** |
-| `timeCurtain` | int | Times for the effect delays Default is **500** |
-| `onShow` | string | Callback function triggered when the color picker is shown. |
-| `onBeforeShow` | string | Callback function triggered before the color picker is shown. |
-| `onHide` | string | Callback function triggered when the color picker is hidden. |
-| `onChange` | string | Callback function triggered when the color is changed. |
-| `onSubmit` | string | Callback function triggered when the color it is chosen. |
+| `theme` | string | Тема |
+| `base` | string | text/html |
 
 
 ### Examaple
 ```php
 <?php
-    echo $form->field($model, 'color')->widget(ColorPicker::className(), [
-        'onShow' => new JsExpression('function() {}),
-    ])->textInput(['maxlength' => 7]);
+    echo $form->field($model, 'code')->widget(CodeMirrorTextArea::class, [
+        // options
+    ]);
  ?>
 
