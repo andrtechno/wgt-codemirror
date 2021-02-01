@@ -8,7 +8,7 @@
     "colorpicker"
   ],
   "homepage": "https://github.com/andrtechno/wgt-codemirror",
-  "type": "yii2-extension",
+  "type": "pixelion-component",
   "license": "MIT",
   "authors": [
     {
